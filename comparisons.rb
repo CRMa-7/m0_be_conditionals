@@ -1,4 +1,3 @@
-vdfg
 # In the exercises below, write your own code where indicated
 # to achieve the desired result.
 
@@ -23,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21            
 # this should print: true
 
 
@@ -55,20 +61,33 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 
 puts 4 < 9
 #YOU DO: Explain.
+puts "an integer of 4 is less than an integer of 9, and with the 'puts' command,
+we will see this Boolean evaluate to true."
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+puts "the variable 'books' is assignedto an integer of 3.
+the following line says an integer of 4 is less than the books variable, and with the 'puts' command,
+we will see this Boolean evaluate to false."
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+puts "the variable 'friends' is assigned to an integer of 6.
+the variable 'siblings' is assigned to an integer of 2.
+The following line says the variable friends is greater than the variable siblings, and with the 'puts' command,
+we will see this Boolean evaluate to true."
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
+puts "the variable 'attendees' is assigned to an integer of 9.
+the variable 'meals' is assigned to an integer of 8.
+The following line says the variable attendees is not equal to the variable meals, and with the 'puts' command,
+we will see this Boolean evaluate to true."
 
 
 #-------------------
@@ -88,19 +107,25 @@ loves_to_play = true
 loves_dog_park = false
 loves_treats = true
 age = 1
+# is_a_puppy = true
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
 # Assume that a dog is a puppy if it is less than 2 years old.
-
+# puts loves_to_play && is_a_puppy
 # What did your final line of code evaluate to? Why do you think that is? Explain.
 # ANSWER:
+puts "The final line of code evaluated to: 'undefined local variable or method `puppy' for main:Object (NameError).'
+Since a puppy variable was not assigned to a data type, there was no way for the terminal to compare them.
+If we can assume a dog is a puppy if it is less than 2 years old, and we know the dog's age is one, we could assign the 'is_a_puppy'
+variable as: 'is_a_puppy = true' and then reevaluate by making this comparison statement: love_to_play && is_a_puppy,
+in which the code should evaluate to true!"
